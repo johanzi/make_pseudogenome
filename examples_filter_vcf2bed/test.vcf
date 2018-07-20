@@ -1,0 +1,19 @@
+##fileformat=VCFv4.0
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of Samples With Data">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##FILTER=<ID=q25,Description="Quality below 25">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##contig=<ID=chloroplast>
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	13582	6911
+chloroplast	1	.	A	C,TA	14	q25	.	GT:GQ:DP	1:80:82	2:30:33
+chloroplast	2	.	T	G,GG	17	q25	.	GT:GQ:DP	1:14:97	2:30:1
+chloroplast	3	.	GTTTT	A	17	q25	.	GT:GQ:DP	1:34:97	0:30:20
+chloroplast	4	.	A	AAAAAAA	24	q25	.	GT:GQ:DP	1:26:70	1:30:5
+chloroplast	5	.	C	T	40	q25	.	GT:GQ:DP	.:.:.	.:.:.
+chloroplast	6	.	C	T	40	q25	.	GT:GQ:DP	.:22:2315	0:29:8
+chloroplast	7	.	C	G	40	q25	.	GT:GQ:DP	.:28:2315	0:29:8
