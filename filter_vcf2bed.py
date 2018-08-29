@@ -87,7 +87,7 @@ def get_Ns(vcf_reader, sample, coverage, quality, exclude_deletions):
         # Note that a deletion with a quality below GQ and DP thresholds will
         # be considered as fitting the first loop statement, and therefore, will get
         # a coordinate of 1 bp. Since following nucleotide will also indicate the deletion
-        # and be caught either in the first statement of the second.
+        # and be caught either in the first statement or the second.
         # In contrary, if the deletion has higher quality than GQ and DP threshold,
         # the full size of the deletion will be indicated in the bed file, unless
         # the option --exclude-deletions is on (in case deletions want to be incorporated in the
