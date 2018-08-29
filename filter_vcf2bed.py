@@ -119,7 +119,6 @@ def get_Ns(vcf_reader, sample, coverage, quality, exclude_deletions):
             # Get the sequence of the alternative allele for the sample
             ALT = record.ALT[index-1]
             # Check if there is something in ALT and if string ALT is smaller than REF
-            #if (ALT != None and len(ALT) < len(record.REF)) and (GQ < quality or DP < coverage):
             if ALT != None and len(ALT) < len(record.REF):
                 length_deletion = len(record.REF)
                 position_end = position_start + length_deletion
