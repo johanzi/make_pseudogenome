@@ -136,6 +136,11 @@ In this case, the mask bed file was generated using the option -e (exclude delet
 bcftools consensus <subset_vcf_file.vcf.gz> --sample sample_name --fasta-ref <reference_fasta.fa> --mask <mask_sample_with_deletions.bed> > pseudogenome_with_deletions_sample_name.fa
 ```
 
+# Examples
+
+Check [examples](https://github.com/johanzi/make_pseudogenome/blob/master/examples_filter_vcf2bed/script.sh) to understand how "bcftools consensus" and filter_vcf2bed.py are working.
+
+
 ## Authors
 
 * **Johan Zicola** - [johanzi](https://github.com/johanzi)
